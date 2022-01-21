@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         city = findViewById(R.id.city);
         imageView = findViewById(R.id.imageView);
         weatherDesc = findViewById(R.id.description);
-        new JsonTask().execute("https://api.openweathermap.org/data/2.5/weather?q="+"istanbul"+"&appid=205e6fce44d62ad88c78cd97586f9a48");
+        new JsonTask().execute("https://api.openweathermap.org/data/2.5/weather?q="+"istanbul"+"&appid=YOUR_API_KEY");
     }
 
 
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
     {
         cityname = city.getText().toString();
 
-        new JsonTask().execute("https://api.openweathermap.org/data/2.5/weather?q="+cityname+"&appid=205e6fce44d62ad88c78cd97586f9a48");
+        new JsonTask().execute("https://api.openweathermap.org/data/2.5/weather?q="+cityname+"&appid=YOUR_API_KEY");
     }
 
     public void goWind(View view)
